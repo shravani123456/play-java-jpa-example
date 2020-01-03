@@ -14,4 +14,6 @@ public interface PersonRepository {
     CompletionStage<Person> add(Person person);
 
     CompletionStage<Stream<Person>> list();
+
+    CompletionStage<Person> del(String name);
 }
